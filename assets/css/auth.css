@@ -1,0 +1,92 @@
+body {
+    background: #f4f4f4 url('../img/background2.jpeg') no-repeat center center fixed !important;
+    background-size: cover !important;
+}
+
+body {
+    background: #f4f4f4; 
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+.auth-container {
+    max-width: 400px;
+    margin: 80px auto;
+    background: rgba(255, 255, 255, 0.3) !important; /* Dibikin 30% aja (lebih bening) */
+    backdrop-filter: blur(15px) !important; /* Efek kaca buram tebal */
+    -webkit-backdrop-filter: blur(15px) !important; /* Buat browser Safari */
+    padding: 35px 30px;
+    border-radius: 20px; /* Dibikin agak bulat */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2); /* Bayangan biar timbul */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Garis pinggir kaca */
+}
+
+.auth-container h2 {
+    text-align: center;
+    color: #ed1e28;
+    margin-bottom: 25px;
+    font-size: 22px;
+}
+
+.auth-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #55565b;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.auth-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #333;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.auth-container input:focus {
+    border-color: #ed1e28;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(237, 30, 40, 0.3);
+}
+
+.auth-container button {
+    width: 100%;
+    padding: 12px;
+    background: #ED1E28;       
+    color: white;
+    border: none;
+    border-radius: 5px;            
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+
+.auth-container button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(237, 30, 40, 0.4);
+}
+
+.auth-container p {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+    color: #55565b;
+}
+
+.auth-container p a {
+    color: #ED1E28;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-container p a:hover {
+    text-decoration: underline;
+}

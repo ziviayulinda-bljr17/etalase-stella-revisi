@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    /* Ganti bg-website.jpg dengan nama file fotomu */
+    background-image: url('../img/background_telkom.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #f4f4f4; /* Cadangan kalau foto gagal load */
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- NAVBAR TELKOM --- */
+.navbar {
+    background: linear-gradient(135deg, #ED1E28, #791316);
+    color: white;
+    padding: 12px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); 
+    border-bottom: 3px solid #B6252A; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.5px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffd1d1;
+}
+
+/* Badge Nama User */
+.user-badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Tombol Login (Garis Putih) */
+.btn-login {
+    border: 2px solid white;
+    padding: 6px 18px;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background: white;
+    color: #ED1E28 !important;
+}
+
+/* Tombol Register (Putih Solid) */
+.btn-register {
+    background: white;
+    color: #ED1E28 !important;
+    padding: 8px 18px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-register:hover {
+    background: #f0f0f0;
+    transform: translateY(-1px);
+}
+
+/* Tombol Logout */
+.btn-nav-logout {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+
+.btn-nav-logout:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* --- CONTAINER & TEKS DASAR --- */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 20px;
+    flex: 1; /* Biar footer selalu di bawah */
+}
+
+h2 {
+    color: #ED1E28;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.error {
+    color: #ED1E28;
+    background: #ffe4e6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-weight: bold;
+    border-left: 4px solid #ED1E28;
+}
+
+.footer {
+    text-align: center !important;
+    padding: 25px 15px;
+    margin-top: 40px;
+    background: linear-gradient(135deg, #B6252A, #791316); /* Gradasi kebalikan header */
+    color: white;
+    width: 100%;
+    display: block;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.footer p {
+    font-size: 13px !important;
+    margin: 4px 0 !important;
+    text-align: center !important;
+}
+
+.footer p:first-child {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* --- AVATAR KECIL DI NAVBAR --- */
+.avatar-navbar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #ffffff;
+    color: #ED1E28;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 2px solid #ffd1d1;
+}
+
+.avatar-navbar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

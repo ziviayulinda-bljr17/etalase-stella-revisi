@@ -1,0 +1,284 @@
+/* =========================================
+   TEMA TELKOM SCHOOL (FIX TOTAL)
+   ========================================= */
+
+.welcome-banner {
+    position: relative;
+    width: 100%;
+    padding: 45px 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    border: 2px solid #ED1E28;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2) !important; /* 20% putih aja */
+    backdrop-filter: blur(15px) !important; 
+    -webkit-backdrop-filter: blur(15px) !important;
+    padding: 25px 35px;
+    border-radius: 15px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2) !important;
+}
+
+.banner-content h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+    color: #ED1E28;
+}
+
+.banner-content p {
+    font-size: 14px;
+    color: #55565B;
+}
+
+/* KARTU PROJECT */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.4); /* Putih transparan */
+    backdrop-filter: blur(10px); /* Blur kaca */
+    -webkit-backdrop-filter: blur(10px);
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* Bayangan halus */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Garis kaca */
+    transition: all 0.3s;
+    text-align: left;
+}
+
+/* Biar pas di-hover tetep ada efeknya tapi ga ilang efek kacanya */
+.project-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.5) !important;
+    box-shadow: 0 12px 40px rgba(237, 30, 40, 0.25) !important;
+    border-color: #ED1E28 !important;
+}
+
+/* GAMBAR PROJECT (Bersih tanpa border merah) */
+.project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    border: none !important;
+    display: block;
+}
+
+/* JUDUL PROJECT (Teks merah, tanpa background) */
+.project-card h3 {
+    margin-bottom: 8px;
+    font-size: 18px;
+}
+
+.project-card h3 a {
+    color: #ED1E28 !important;
+    text-decoration: none;
+    background: transparent !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    display: inline;
+}
+
+.project-card h3 a:hover {
+    text-decoration: underline;
+}
+
+.project-card p {
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.project-card small {
+    color: #55565B;
+    display: block;
+    margin-bottom: 12px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+/* TOMBOL-TOMBOL (Link, Demo, Edit, Hapus) */
+.project-card .btn-action {
+    display: inline-block;
+    margin: 4px 4px 0 0;
+    padding: 6px 14px;
+    background: #ED1E28; 
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.3s;
+    border: none;
+}
+
+.project-card .btn-action:hover {
+    transform: scale(1.05);
+    background: #B6252A;
+}
+
+.btn-edit { background: #55565B !important; }
+.btn-hapus { background: #959597 !important; }
+
+/* FOOTER */
+.footer {
+    text-align: center !important;
+    padding: 25px 15px;
+    margin-top: 40px;
+    background: #ED1E28; 
+    color: white;
+    width: 100%;
+    display: block;
+}
+
+.footer p {
+    font-size: 13px !important;
+    margin: 4px 0 !important;
+    text-align: center !important;
+}
+
+.footer p:first-child {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Glass effect untuk form pencarian */
+form[action="index.php"] {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* --- BADGE TOTAL KARYA --- */
+.total-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #ED1E28, #B6252A); /* Gradasi merah Telkom */
+    color: white;
+    padding: 8px 20px;
+    border-radius: 30px; /* Bikin lonjong kayak kapsul */
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(237, 30, 40, 0.4); /* Bayangan merah */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: floatBadge 3s ease-in-out infinite; /* Efek melayang */
+}
+
+.total-badge span {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 3px;
+}
+
+/* Animasi biar kelihatan hidup (naik turun dikit) */
+@keyframes floatBadge {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+}
+
+/* --- KOTAK SISWA PALING AKTIF (LEADERBOARD) --- */
+.top-siswa-container {
+    background: rgba(255, 255, 255, 0.3) !important; /* Efek kaca transparan */
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.top-siswa-container h3 {
+    color: #ED1E28;
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.top-siswa-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.top-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border: 1px solid #eee;
+    transition: transform 0.3s;
+}
+
+.top-card:hover {
+    transform: translateY(-5px); /* Efek naik saat disentuh */
+    box-shadow: 0 8px 20px rgba(237, 30, 40, 0.2);
+}
+
+/* Medali Peringkat (1, 2, 3) */
+.medal {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #ED1E28;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Lingkaran Foto/Inisial */
+.avatar-top {
+    width: 50px;
+    height: 50px;
+    background: #ED1E28;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px auto;
+    border: 3px solid #ffd1d1;
+}
+
+.top-card p {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.top-card small {
+    font-size: 11px;
+    color: #888;
+    font-style: italic;
+}

@@ -1,0 +1,94 @@
+.form-container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.4) !important; /* Efek Kaca Transparan */
+    backdrop-filter: blur(15px) !important;
+    -webkit-backdrop-filter: blur(15px) !important;
+    padding: 35px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.form-container h2 {
+    color: #ED1E28; /* Merah Telkom */
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.form-container label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="file"],
+.form-container textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7); /* Agak transparan */
+    font-size: 14px;
+    color: #333;
+    font-family: inherit;
+    transition: all 0.3s;
+    outline: none;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+    border-color: #ED1E28;
+    background: #ffffff;
+    box-shadow: 0 0 5px rgba(237, 30, 40, 0.3);
+}
+
+.form-container textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* --- TOMBOL SIMPAN --- */
+.form-container button {
+    background: #ED1E28;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.form-container button:hover {
+    background: #B6252A;
+    transform: translateY(-2px);
+}
+
+/* --- TOMBOL BATAL --- */
+.form-container a {
+    margin-left: 10px;
+    color: #55565B;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.form-container a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.form-container img {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
